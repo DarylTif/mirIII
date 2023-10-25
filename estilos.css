@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'MedievalSharp', cursive;
+    background-image: url(assets/f1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.nav{
+    width: 250px;
+}
+
+.nav-link{
+    color: black;
+    display: block;
+    padding: 6px 0;
+}
+
+.nav-link-inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav-link-inside:hover{
+    background: pink;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.list-item{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-item-click{
+    cursor: pointer;
+}
+
+.list-button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list-button:hover{
+    background: pink;
+}
+
+.arrow .list-arrow{
+    transform: rotate(90deg);
+}
+
+.list-arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list-show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid black;
+    transition: height .4s;
+    height: 0;
+}
